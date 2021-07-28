@@ -60,3 +60,11 @@ person = Person()
 person.name = 'Olga Matias'
 person.age = 24
 print(person)
+
+class Student(object):
+    def __init__(self, name, age=None, email=None):
+        self.name = name
+        self.age = age
+        self.email = email
+
+    
