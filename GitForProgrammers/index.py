@@ -75,4 +75,27 @@ def random_string(n=10,
     return ''.join([secrets.choice(chars) for _ in range(n)])
 
 
-print(random_string())
+# print(random_string())
+
+
+class Calculator(object):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return f'x = {self.x},  y = {self.y}'
+
+    def add(self):
+        return self.x + self.y
+
+    def divide(self):
+        if self.y == 0:
+            print('Demominator cannot be zero')
+            return
+
+        return self.x / self.y
+
+
+calc = Calculator(4, 3)
+print(calc.divide())
