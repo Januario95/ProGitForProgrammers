@@ -10,3 +10,5 @@ Created at Thur Jul 29 2021 01:46:23
 import time
 
 print(time.ctime())
+
+soma = lambda *args: sum(args)
