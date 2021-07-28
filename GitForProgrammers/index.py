@@ -55,8 +55,12 @@ class Person(object):
     def __str__(self):
         return f'{self.name} - {self.age} years old'
 
+    def __repr__(self):
+        return f'<Person: ({self.name}, {self.age})>'
+
 
 person = Person()
 person.name = 'Olga Matias'
 person.age = 24
-print(person)
+print(str(person))
+print(repr(person))
