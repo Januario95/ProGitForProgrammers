@@ -17,9 +17,15 @@ username = 'Januario95'
 password = 'Jaci1995'
 
 
+def welcome():
+    print('Welcome')
+
+
 def login(user, passwd):
     if user == username and passwd == password:
-        print('Welcoe')
+        welcome()
     else:
         print('Login failed')
-    
+
+
+login(username, password)
