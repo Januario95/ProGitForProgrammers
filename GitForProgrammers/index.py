@@ -15,3 +15,11 @@ soma = lambda *args: sum(args)
 
 username = 'Januario95'
 password = 'Jaci1995'
+
+
+def login(user, passwd):
+    if user == username and passwd == password:
+        print('Welcoe')
+    else:
+        print('Login failed')
+    
