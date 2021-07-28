@@ -105,6 +105,9 @@ class Calculator(object):
     def module(self):
         return self.x % self.y
 
+    def reminder(self):
+        return self.x // self.y
+
 
 calc = Calculator(4, 3)
 print(calc.divide())
