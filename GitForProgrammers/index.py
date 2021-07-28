@@ -99,6 +99,9 @@ class Calculator(object):
     def multiply(self):
         return self.x * self.y
 
+    def subtract(self):
+        return self.x - self.y
+
 
 calc = Calculator(4, 3)
 print(calc.divide())
