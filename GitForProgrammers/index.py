@@ -8,6 +8,8 @@ Created at Thur Jul 29 2021 01:46:23
 
 
 import time
+import string
+import secrets
 
 print(time.ctime())
 
@@ -28,7 +30,7 @@ def login(user, passwd):
         print('Login failed')
 
 
-login(username, password)
+# login(username, password)
 
 
 class Person(object):
@@ -59,8 +61,18 @@ class Person(object):
         return f'<Person: ({self.name}, {self.age})>'
 
 
-person = Person()
-person.name = 'Olga Matias'
-person.age = 24
-print(str(person))
-print(repr(person))
+# person = Person()
+# person.name = 'Olga Matias'
+# person.age = 24
+# print(str(person))
+# print(repr(person))
+
+
+def random_string(n=10,
+                  chars=string.ascii_letters +
+                  string.digits +
+                  string.punctuation):
+    return ''.join([secrets.choice(chars) for _ in range(n)])
+
+
+print(random_string())
