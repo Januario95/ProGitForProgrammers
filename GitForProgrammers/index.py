@@ -61,10 +61,10 @@ person.name = 'Olga Matias'
 person.age = 24
 print(person)
 
-class Student(object):
-    def __init__(self, name, age=None, email=None):
-        self.name = name
-        self.age = age
-        self.email = email
+class Movie(object):
+    def __init__(self, title, duration, release=None):
+        self.title = title
+        self.duration = duration
+        self.release = release
 
-    
+
