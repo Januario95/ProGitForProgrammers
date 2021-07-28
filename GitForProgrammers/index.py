@@ -51,3 +51,12 @@ class Person(object):
     @age.setter
     def age(self, new_age):
         self.__age = new_age
+
+    def __str__(self):
+        return f'{self.name} - {self.age} years old'
+
+
+person = Person()
+person.name = 'Olga Matias'
+person.age = 24
+print(person)
