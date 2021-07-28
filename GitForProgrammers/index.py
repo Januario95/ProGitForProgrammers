@@ -102,6 +102,9 @@ class Calculator(object):
     def subtract(self):
         return self.x - self.y
 
+    def module(self):
+        return self.x % self.y
+
 
 calc = Calculator(4, 3)
 print(calc.divide())
