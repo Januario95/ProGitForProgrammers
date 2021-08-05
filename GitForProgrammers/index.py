@@ -61,13 +61,6 @@ class Person(object):
         return f'<Person: ({self.name}, {self.age})>'
 
 
-# person = Person()
-# person.name = 'Olga Matias'
-# person.age = 24
-# print(str(person))
-# print(repr(person))
-
-
 def random_string(n=10,
                   chars=string.ascii_letters +
                   string.digits +
